@@ -119,3 +119,12 @@ button:hover {
 .data-table tr:hover {
   background-color: #273449;
 }
+
+select {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border-radius: 6px;
+  border: none;
+}
