@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Drivers from "./pages/Drivers";
 import Vehicles from "./pages/Vehicles";
@@ -9,7 +9,7 @@ import "./App.css";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Navbar />
 
       <Routes>
@@ -19,7 +19,7 @@ function App() {
         <Route path="/packages" element={<Packages />} />
         <Route path="/route-details" element={<RouteDetails />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
